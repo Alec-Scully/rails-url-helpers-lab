@@ -6,6 +6,8 @@ class StudentsController < ApplicationController
   end
 
   def show
+    byebug
+    @students = Student.find(params[:id])
   end
 
   private
